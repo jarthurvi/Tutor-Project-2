@@ -1,12 +1,12 @@
 const Tutor = require('./Tutor');
 const Students = require('./Students');
 
-User.hasMany(Students, {
+Tutor.hasMany(Students, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE'
 });
 
-Project.belongsTo(User, {
+Students.belongsTo(Tutor, {
   foreignKey: 'user_id'
 });
 
