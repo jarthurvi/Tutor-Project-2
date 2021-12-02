@@ -15,14 +15,17 @@ Tutor.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-   
+    student_id: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'tutor',
   }
 );
 
