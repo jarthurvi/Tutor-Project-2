@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
     const studentData = await students.findAll({
       include: [
         {
-          model: User,
+          model: Teacher,
           attributes: ['name'],
         },
       ],
@@ -32,7 +32,7 @@ router.get('/Students/:id', async (req, res) => {
     const studentData = await Students.findByPk(req.params.id, {
       include: [
         {
-          model: User,
+          model: Teacher,
           attributes: ['name'],
         },
       ],
