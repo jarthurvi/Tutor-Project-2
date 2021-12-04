@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const {Teacher} = require('../models');
-const withAuth = require('../utils/auth');
+const {Teacher} = require('../../models');
+const withAuth = require('../../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
     const student = studentData.map((Students) => Students.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('homepage', { 
+    res.render('main', { 
       students, 
       logged_in: req.session.logged_in 
     });
