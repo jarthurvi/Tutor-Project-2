@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
     const student = studentData.map((Students) => Students.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('main', { 
+    res.render('login', { 
       students, 
       logged_in: req.session.logged_in 
     });
