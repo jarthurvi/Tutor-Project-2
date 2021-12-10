@@ -3,7 +3,7 @@ const {Tutors} = require('../../models');
 const withAuth = require('../../utils/auth');
 
 
-router.get('/tutor', async (req, res) => {
+router.get('/Tutor', async (req, res) => {
     //try {
       //const studentData = await Students.findByPk(req.params.id, {
       //  include: [
@@ -12,5 +12,5 @@ router.get('/tutor', async (req, res) => {
            // attributes: ['name'],
           //},
         //],
-        res.render('tutor');
+        res.render('Tutor');
     });
