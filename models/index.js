@@ -1,5 +1,5 @@
 const Tutor = require('./Tutor');
-const Students = require('./Students');
+const Students = require('./Student');
 const Teacher = require("./Teacher")
 
 Tutor.hasMany(Students, {
