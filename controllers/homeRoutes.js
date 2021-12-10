@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {Teacher, Students} = require('../models');
+const {Teacher, Students, Tutor} = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -19,5 +19,17 @@ router.get('/students', async (req, res) => {
       //],
       res.render('students');
   });
+
+  router.get('/tutor', async (req, res) => {
+    //try {
+      //const studentData = await Students.findByPk(req.params.id, {
+      //  include: [
+         // {
+           // model: User,
+           // attributes: ['name'],
+          //},
+        //],
+        res.render('tutor');
+    });
 module.exports = router;
 //generated 
