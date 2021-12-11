@@ -32,7 +32,9 @@ App is Deployed with Heroku
 Anyone can Use
 
 ## Contribution
-Always check with authors first.
+Joseph 
+Oyin 
+Thomas 
 
 ## Tests
 Test often and always. 
