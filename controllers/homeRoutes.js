@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {Teacher, Students, Tutor} = require('../models');
+const { Student, Tutor, Teacher} = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -29,7 +29,12 @@ router.get('/students', async (req, res) => {
            // attributes: ['name'],
           //},
         //],
-        res.render('tutor');
+        res.render('Tutor');
     });
 module.exports = router;
 //generated 
+
+
+
+
+module.exports = router;
